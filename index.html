@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="public/css/style.css">
+
+    <title>Charly Dizer</title>
+</head>
+
+<body>
+    <div class="cursor cursor--small"></div>
+    <canvas class="cursor cursor--canvas" resize></canvas>
+    <header>
+        <button class="hamburger">
+            <div class="bar"></div>
+        </button>
+    </header>
+    <nav class="nav__menu">
+        <a href="#section1">Acceuil</a>
+        <a href="#section2">Réalisation</a>
+        <a href="#section3">A propos</a>
+        <a href="#section4">Contact</a>
+        <a href="">CV</a><!--lien de CV-->
+        <input type="checkbox" id="switcher">
+    </nav>
+
+    <section class="section1" id="section1">
+        <div class="section1__id">          
+            <h1>Charly Dizier</h1>
+            <h2>Développeur intégrateur web</h2>
+        </div>
+    </section>
+
+    <section class="section2" id="section2">
+        <div class="section2__title">
+            <h3>Réalisation</h3>
+        </div>
+        <div class="section2__container--item">
+            <div class="section2__item">
+                <div class="section2__item--img">
+                    <img src="public/img/prez2.png" alt="">
+                </div>
+                <div class="section2__item--txt">
+                    <h4>Project developpement web</h4>
+                    <p>Mon premier projet concret. Il sagit d'un site d'exercice et ayant été utilisé pour ma présentation de candidature OpenClassrooms et continue de me servir 
+                        pour mon apprentissage. </p>
+                </div>
+                <div class="section2__item--btn">
+                    <p><a href="">Visite du site</a></p>
+                </div>
+            </div>
+            <div class="section2__item">
+                <div class="section2__item--img">
+                    <img src="public/img/prez2.png" alt="">
+                </div>
+                <div class="section2__item--txt">
+                    <h4>Project developpement web</h4>
+                    <p>Mon premier projet concret. Il sagit d'un site d'exercice et ayant été utilisé pour ma présentation de candidature OpenClassrooms et continue de me servir 
+                        pour mon apprentissage. </p>
+                </div>
+                <div class="section2__item--btn">
+                    <p><a href="">Visite du site</a></p>
+                </div>
+            </div>
+            <div class="section2__item">
+                <div class="section2__item--img">
+                    <img src="public/img/prez2.png" alt="">
+                </div>
+                <div class="section2__item--txt">
+                    <h4>Project developpement web</h4>
+                    <p>Mon premier projet concret. Il sagit d'un site d'exercice et ayant été utilisé pour ma présentation de candidature OpenClassrooms et continue de me servir 
+                        pour mon apprentissage. </p>
+                </div>
+                <div class="section2__item--btn">
+                    <p><a href="">Visite du site</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section3" id="section3">
+        <div class="section3__title">
+            <h3>A propos</h3>
+        </div>
+        <div class="section3__item">
+            <div class="section3__item--img">
+                <img src="" alt="">
+            </div>
+            <div class="section3__item--txt">
+                <p>Passionner de technologie j'ai entrepris en 2022 une reconvertion professionnelle dans le domaine du développement web</p>
+                <p>Vous pouvez trouver <a href="">ici</a> mon CV en ligne pour de plus amples information sur mon parcours</p>
+            </div>    
+        </div>
+    </section>
+
+    <section class="section4" id="section4">
+        <div class="section4__title">
+            <h3>contact</h3>
+        </div>
+        <div class="section4__formAndText">
+            <form class="section4__form" method="post" action="page_fictive.php">
+                <div class="section4__form--input">
+                    <input type="text" name="nom" id="nom" maxlength="20" placeholder="Nom" required />
+                </div>
+                <div class="section4__form--input">
+                    <input type="text" name="prenom" id="prenom" maxlength="20" placeholder="Prénom" required />
+                </div>
+                <div class="section4__form--input">
+                    <input type="email" name="email" id="email" placeholder="Adresse  Mail" required />
+                </div>
+                <div class="section4__form--input">
+                    <textarea name="message" id="message" rows="8" placeholder="Message" required></textarea>
+                </div>
+                <div class="section4__form--btn">
+                    <input type="submit" value="SUBMIT" />
+                </div>
+            </form>
+            <div class="section4__txt">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates esse asperiores laboriosam ab molestias necessitatibus hic exercitationem ea tenetur, 
+                    dignissimos ducimus vero harum accusamus voluptatum culpa delectus quisquam, libero provident magni incidunt officiis repellendus! Dolore dolorum fugit 
+                    exercitationem aliquid odio at non numquam perferendis nulla a hic inventore, adipisci eius ullam assumenda minus alias deleniti doloribus, aut suscipit 
+                    consequatur reiciendis beatae. Excepturi nobis eius exercitationem temporibus harum quos possimus blanditiis eveniet quo fugiat vero
+                </p>
+                <div class="section4__social">
+                    <a href=""><img src="public/img/Linkedin1.png" alt="Logo Linkedin"></a>
+                    <a href=""><img src="public/img/Git1.png" alt="Logo Github"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__legal">
+            <p>Droit d'auteur tmtc Charly Dizier 2022</p>
+        </div>
+    </footer>
+    
+    <script src="js/hamburgerMenu.js"></script>
+    
+    <!--Cursor-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+    <script src="js/cursor.js"></script>
+
+    <script src="js/darkmode.js"></script>
+</body>
+</html>

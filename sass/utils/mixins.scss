@@ -1,0 +1,45 @@
+
+//Police
+@import "..//base/police";
+
+@mixin police__3Dumb {
+    font-family: "3dumbregular";
+}
+@mixin police__2Dumb {
+    font-family: '2dumbregular';
+}
+//Police title
+@mixin policeTitle {
+    @include police__3Dumb;
+    font-size: 3rem;
+    color: var(--secondary-color);
+}
+@mixin policeTxt {
+    @include police__3Dumb;
+    font-size: 1.3rem;
+    color: var(--secondary-color);
+} 
+    
+
+//Border
+@mixin border__base {
+    border: 2px solid var(--secondary-color);
+}
+@mixin border__style--1 {
+    @include border__base;
+    border-width: 3px 4px 3px 5px;
+    border-radius:95% 4% 92% 5%/4% 95% 6% 95%;
+    transform: rotate(2deg);
+}
+@mixin border__style--2 {
+    @include border__base;
+    //border-width: 3px 3px 5px 5px;
+    border-radius:0.8% 96% 0.9% 96%/96% 0.8% 93% 1.7%;
+    transform: rotate(-2deg);
+}
+@mixin border__style--3 {
+    @include border__base;
+    border-width: 5px 3px 3px 5px;
+    border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
+    transform: rotate(2deg);
+}

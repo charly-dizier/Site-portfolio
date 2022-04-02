@@ -1,0 +1,27 @@
+
+@mixin container {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+@mixin item {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+}
+@mixin sous_item {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+@mixin column {
+    flex-direction: column;
+}

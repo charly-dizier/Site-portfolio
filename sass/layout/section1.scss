@@ -1,0 +1,27 @@
+
+.section1 {
+    @include container;
+    &__id {
+        @include item;
+        @include column;
+        @include police__3Dumb;
+        @include border__style--1;
+        margin: 10% 25% 20% 25%;
+        text-align: center;
+        & h1 {
+            @include sous-item;
+            @include column;
+            text-align: center;
+            font-size: 7rem;
+            margin: 10% 0% 5% 0%;
+            transform: rotate(-2deg)
+        }
+        & h2 {
+            @include sous-item;
+            @include column;
+            font-size: 2rem;
+            margin-bottom: 10%;
+            transform: rotate(-2deg)
+        }
+    }
+}

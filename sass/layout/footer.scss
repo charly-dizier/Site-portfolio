@@ -1,0 +1,13 @@
+
+.footer {
+    @include container;
+    border-top: 2px solid var(--secondary-color);
+    border-radius: 5%;
+    margin: 0% 4% 0% 4%;
+    &__legal {
+        @include sous-item;
+        @include column;
+        @include policeTxt;
+        align-items: center;
+    }
+}

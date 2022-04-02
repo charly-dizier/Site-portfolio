@@ -1,0 +1,82 @@
+
+.section4 {
+    @include container;
+    @include column;
+    align-items: center;
+    padding: 2% 20% 10% 20%;
+    &__title {
+        @include item;
+        @include column;
+        @include policeTitle;
+        margin-bottom: 3%;
+        text-align: center;
+        & h3 {
+            font-size: 5rem;
+        }
+    }
+    &__formAndText {
+        @include item;
+        @include border__style--1;
+        padding: 4%;
+        justify-content: center;
+    }
+    &__form {
+        @include item;
+        @include column;
+        text-align: center;
+        &--input {
+            @include sous-item;
+            @include column;
+            border-bottom: 2px solid var(--secondary-color);
+            border-radius: 5%;
+            margin-top: 7%;
+            transform: rotate(-2deg);
+            & input, & textarea {
+                @include policeTxt;
+                text-align: center;
+                border: none;
+                background-color: var(--primary-color);
+            }
+            & textarea {
+                resize: none;
+            }
+        }
+        &--btn {
+            @include sous-item;
+            justify-content: right;
+            margin-top: 10%;
+            transform: rotate(-2deg);
+            & input:hover {
+                cursor: none;
+            }
+        }
+    }
+    &__txt {
+        @include item;
+        @include column;
+        @include policeTxt;
+        text-align: center;
+        margin-left: 5%; 
+        & p {
+            transform: rotate(-2deg);
+        }
+    }
+    &__social {
+        @include sous-item;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5%;
+        transform: rotate(-2deg);
+        & a {
+            margin: 0% 4% 0% 4%;
+        }
+        & img {
+            @include sous-item;
+            @include column;
+            transition: 0.3s;
+            &:hover {
+                width: 120%;
+            }
+        }
+    }
+}

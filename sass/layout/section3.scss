@@ -1,0 +1,28 @@
+
+.section3 {
+    @include container;
+    @include column;
+    align-items: center;
+    padding: 15% 20% 25% 20%;
+    &__title {
+        @include item;
+        @include column;
+        @include policeTitle;
+        text-align: center;
+        & h3 {
+            font-size: 5rem;
+        }
+    }
+    &__item {
+        @include item;
+        @include column;
+        @include policeTxt;
+        text-align: center;
+        &--img {
+
+        }
+        &--txt {
+
+        }
+    }
+}

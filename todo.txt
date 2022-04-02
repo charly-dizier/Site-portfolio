@@ -1,0 +1,26 @@
+
+rédaction des text (bio, contact, réalisation)
+    photo de profil (carte grossissement?) https://codepen.io/petegarvin1/pen/YzWBbRx
+
+grossisement loupe cursor?
+
+form btn
+
+link (social)
+
+messagerie mail
+
+droit d'auteur
+
+theme blanc/noir ?
+    (icon social a faire en noir)
+    (couleur menu burger)
+
+CV
+
+scroll bar firefox
+
+responsive
+
+ctrl k c = comment
+ctrl k u = decomment
