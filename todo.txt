@@ -15,6 +15,7 @@ droit d'auteur
 theme blanc/noir ?
     (icon social a faire en noir)
     (couleur menu burger)
+    (toggle btn)
 
 CV
 
