@@ -41,15 +41,6 @@
                 resize: none;
             }
         }
-        &--btn {
-            @include sous-item;
-            justify-content: right;
-            margin-top: 10%;
-            transform: rotate(-2deg);
-            & input:hover {
-                cursor: none;
-            }
-        }
     }
     &__txt {
         @include item;
