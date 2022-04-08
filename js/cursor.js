@@ -31,13 +31,6 @@ const initCursor = () => {
   requestAnimationFrame(render);
 };
 
-/////////////////////////////////
-//mon immonde code qui ne fonctionnne pas
-
-
-
-//////////////////////////////////
-
 initCursor();
 
 let lastX = 0;
@@ -104,3 +97,32 @@ const initCanvas = () => {
 
 initCanvas();
 
+// const bright = 'rgb(255, 0, 0)';
+// const dark = 'rgb(17, 255, 17)';
+
+// // const body = addEventListener(document.body);
+// // const darkmode = document.querySelector(".darkmode");
+
+// let darkmodeActive = document.body.contains(".darkmode");
+
+// if (darkmodeActive) {
+//   group.strokeColor._canvasStyle = bright;
+// } else {
+//   group.strokeColor._canvasStyle = dark;
+// }
+
+
+// // if (darkmodeActive) {
+// //   group.strokeColor._canvasStyle = bright;
+// // }
+// //   else {
+// //     group.strokeColor._canvasStyle = dark;
+// //   }
+
+
+//   // if (document.body.classList.contains('darkmode')) {
+//   //   group.strokeColor._canvasStyle = bright;
+//   // }
+//   // else {
+//   //   group.strokeColor._canvasStyle = dark;
+//   // }
