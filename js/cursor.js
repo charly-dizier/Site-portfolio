@@ -34,15 +34,7 @@ const initCursor = () => {
 /////////////////////////////////
 //mon immonde code qui ne fonctionnne pas
 
-const bright = 'rgb(255, 255, 255)';
-const dark = 'rgb(17, 17, 17)';
 
-if (document.body.classList.contains('darkmode')) {
-  color = dark;
-} else {
-  color = bright;
-}
-let ringColor = color;
 
 //////////////////////////////////
 
@@ -61,7 +53,7 @@ const initCanvas = () => {
     height: 75
   };
   paper.setup(canvas);
-  const strokeColor = ringColor;
+  const strokeColor = "rgba(255, 255, 255, 0.5)";
   const strokeWidth = 1;
   const segments = 8;
   const radius = 20;
@@ -111,3 +103,4 @@ const initCanvas = () => {
 }
 
 initCanvas();
+

@@ -4,8 +4,6 @@ rédaction des text (bio, contact, réalisation)
 
 grossisement loupe cursor?
 
-form btn
-
 link (social)
 
 messagerie mail
@@ -21,6 +19,8 @@ CV
 scroll bar firefox
 
 responsive
+
+mouse onclick bubble?
 
 ctrl k c = comment
 ctrl k u = decomment

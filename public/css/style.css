@@ -35,6 +35,10 @@ body a {
   --menu-color: rgba(250, 250, 250, 0.925);
 }
 
+.ringcouleur {
+  color: blue;
+}
+
 .cursor {
   position: fixed;
   left: 0;
@@ -72,6 +76,66 @@ body a {
   border-radius: 100vw;
 }
 
+.bubbly-anim:before, .bubbly-anim:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 140%;
+  height: 100%;
+  left: -20%;
+  z-index: -1000;
+  transition: all ease-in-out 0.5s;
+  background-repeat: no-repeat;
+}
+.bubbly-anim:before {
+  display: none;
+  top: -75%;
+  background-image: radial-gradient(circle, var(--secondary-color) 20%, transparent 20%), radial-gradient(circle, transparent 20%, var(--secondary-color) 20%, transparent 30%), radial-gradient(circle, var(--secondary-color) 20%, transparent 20%), radial-gradient(circle, var(--secondary-color) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--secondary-color) 15%, transparent 20%), radial-gradient(circle, var(--secondary-color) 20%, transparent 20%), radial-gradient(circle, var(--secondary-color) 20%, transparent 20%), radial-gradient(circle, var(--secondary-color) 20%, transparent 20%), radial-gradient(circle, var(--secondary-color) 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+}
+.bubbly-anim:after {
+  display: none;
+  bottom: -75%;
+  background-image: radial-gradient(circle, var(--secondary-color) 20%, transparent 20%), radial-gradient(circle, var(--secondary-color) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--secondary-color) 15%, transparent 20%), radial-gradient(circle, var(--secondary-color) 20%, transparent 20%), radial-gradient(circle, var(--secondary-color) 20%, transparent 20%), radial-gradient(circle, var(--secondary-color) 20%, transparent 20%), radial-gradient(circle, var(--secondary-color) 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+}
+.bubbly-anim:active {
+  transform: scale(0.9);
+  box-shadow: 0 2px 25px var(--secondary-color);
+}
+.bubbly-anim.animate:before {
+  display: block;
+  animation: topBubbles ease-in-out 0.75s forwards;
+}
+.bubbly-anim.animate:after {
+  display: block;
+  animation: bottomBubbles ease-in-out 0.75s forwards;
+}
+
+@keyframes topBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+  }
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+  }
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+@keyframes bottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+  }
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+  }
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
 .hamburger {
   position: fixed;
   top: 0;
@@ -149,60 +213,6 @@ input:checked + label:after {
   -ms-transform: translateX(-100%);
   -o-transform: translateX(-100%);
   transform: translateX(-100%);
-}
-
-.submit--btn {
-  font-family: "3dumbregular";
-  font-size: 1.3rem;
-  color: var(--secondary-color);
-  font-size: 1.7rem;
-  background: none;
-  cursor: none;
-  border: 0;
-  box-sizing: border-box;
-  margin: 10% 20% 5%;
-  padding: 3% 1%;
-  transform: rotate(-2deg);
-  color: var(--third-color);
-  box-shadow: inset 0 0 0 2px var(--third-color);
-  border-radius: 0.8% 96% 0.9% 96%/96% 0.8% 93% 1.7%;
-}
-.submit--btn::before, .submit--btn::after {
-  box-sizing: inherit;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border: 2px solid transparent;
-  width: 0;
-  height: 0;
-}
-.submit--btn:hover {
-  color: var(--secondary-color);
-  transition: 0.5s;
-  cursor: none;
-}
-.submit--btn::before {
-  top: 0;
-  left: 0;
-}
-.submit--btn::after {
-  top: 0;
-  left: 0;
-}
-.submit--btn:hover::before, .submit--btn:hover::after {
-  width: 100%;
-  height: 100%;
-}
-.submit--btn:hover::before {
-  border-top-color: var(--secondary-color);
-  border-right-color: var(--secondary-color);
-  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
-}
-.submit--btn:hover::after {
-  border-bottom-color: var(--secondary-color);
-  border-left-color: var(--secondary-color);
-  transition: height 0.25s ease-out, width 0.25s ease-out 0.25s;
 }
 
 .nav__menu {
@@ -485,8 +495,33 @@ input:checked + label:after {
   border: none;
   background-color: var(--primary-color);
 }
+.section4__form--input input:hover, .section4__form--input textarea:hover {
+  cursor: none;
+}
 .section4__form--input textarea {
   resize: none;
+}
+.section4__form--btn {
+  transform: rotate(-2deg);
+  margin-top: 5%;
+}
+.section4__form--btn button {
+  font-family: "3dumbregular";
+  font-size: 1.3rem;
+  color: var(--secondary-color);
+  font-size: 1.7rem;
+  padding: 1% 5%;
+  background-color: var(--primary-color);
+  border: none;
+  transition: 0.4s;
+}
+.section4__form--btn button:hover {
+  border: 2px solid var(--secondary-color);
+  border-width: 3px 4px 3px 5px;
+  border-radius: 95% 4% 92% 5%/4% 95% 6% 95%;
+  transform: rotate(2deg);
+  font-size: 2.2rem;
+  cursor: none;
 }
 .section4__txt {
   width: 100%;

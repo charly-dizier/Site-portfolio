@@ -21,11 +21,11 @@
         </button>
     </header>
     <nav class="nav__menu">
-        <a href="#section1">Acceuil</a>
-        <a href="#section2">Réalisation</a>
-        <a href="#section3">A propos</a>
-        <a href="#section4">Contact</a>
-        <a href="">CV</a><!--lien de CV-->
+        <a href="#section1" class="bubbly-anim">Acceuil</a>
+        <a href="#section2" class="bubbly-anim">Réalisation</a>
+        <a href="#section3" class="bubbly-anim">A propos</a>
+        <a href="#section4" class="bubbly-anim">Contact</a>
+        <a href="" class="bubbly-button">CV</a><!--lien de CV-->
         <input type="checkbox" id="switcher">
         <label for="switcher">Toggle</label>
     </nav>
@@ -117,7 +117,9 @@
                 <div class="section4__form--input">
                     <textarea name="message" id="message" rows="8" placeholder="Message" required></textarea>
                 </div>
-                <button class="submit--btn">Envoyer</button>
+                <div class="section4__form--btn ">
+                    <button class="bubbly-anim">Envoyer</button>
+                </div>
             </form>
             <div class="section4__txt">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates esse asperiores laboriosam ab molestias necessitatibus hic exercitationem ea tenetur, 
@@ -126,8 +128,8 @@
                     consequatur reiciendis beatae. Excepturi nobis eius exercitationem temporibus harum quos possimus blanditiis eveniet quo fugiat vero
                 </p>
                 <div class="section4__social">
-                    <a href=""><img src="public/img/Linkedin1.png" alt="Logo Linkedin"></a>
-                    <a href=""><img src="public/img/Git1.png" alt="Logo Github"></a>
+                    <a href="https://www.linkedin.com/in/charly-dizier/" target="blank"><img src="public/img/Linkedin1.png" alt="Logo Linkedin"></a>
+                    <a href="https://github.com/charly-dizier" target="blank"><img src="public/img/Git1.png" alt="Logo Github"></a>
                 </div>
             </div>
         </div>
@@ -147,5 +149,7 @@
     <script src="js/cursor.js"></script>
 
     <script src="js/darkmode.js"></script>
+
+    <script src="js/anim-btn-bubble.js"></script>
 </body>
 </html>
