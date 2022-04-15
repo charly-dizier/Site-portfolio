@@ -3,7 +3,7 @@
     @include container;
     @include column;
     align-items: center;
-    padding: 15% 20% 25% 20%;
+    padding: 2% 20% 25% 20%;
     &__title {
         @include item;
         @include column;
@@ -17,12 +17,63 @@
         @include item;
         @include column;
         @include policeTxt;
-        text-align: center;
-        &--img {
-
-        }
-        &--txt {
-
+        font-size: 1.7rem;
+        &__img {
+            &--card {
+                @include sous_item;
+                margin-left: 2%;
+                float: right;
+                height: 375px;
+                width: 300px;
+                border-radius: 10px;
+                transition: background 0.8s;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                background: url(../../public/img/photo_id.png) center center no-repeat;
+                background-size: 375px;
+                background-color: opacity 0;
+                &:hover {
+                    background: url(../../public/img/photo_id.png) left center no-repeat;
+                    background-size: 575px;
+                    h4 {
+                        opacity: 1;
+                    }
+                    ul {
+                        opacity: 1;
+                    }
+                }
+            }
+            &--border {
+                height: 365px;
+                width: 290px;
+                border-radius: 10px;
+                transition: 0.8s;
+                position: relative;
+                &:hover {
+                  border: 1px solid rgb(255, 255, 255);
+                  transition: 0.8s;
+                } 
+            }
+            &--title {
+                @include policeTxt;
+                color: rgb(255, 255, 255);
+                opacity: 0;
+                transition: opacity 0.8s;
+                left: 0;
+                margin: 20px;
+                position: absolute;
+            }
+            &--social {
+                position: absolute;
+                opacity: 0;
+                bottom: 0;
+                left: 0;
+                transition: 0.8s;
+                & li {
+                    list-style: none;
+                }
+            }
         }
     }
 }

@@ -1,16 +1,12 @@
 
 rédaction des text (bio, contact, réalisation)
-    photo de profil (carte grossissement?) https://codepen.io/petegarvin1/pen/YzWBbRx
 
 grossisement loupe cursor?
 
 messagerie mail
 
-droit d'auteur
-
 theme blanc/noir ?
     (icon social a faire en noir)
-    (couleur menu burger)
 
 CV
 
@@ -18,7 +14,14 @@ scroll bar firefox
 
 responsive
 
-mouse onclick bubble?
+bubble:
+    -mouse on click?
+    -link social
+
+point blanc gauche a propos ???? késkécé
+
+déplacer les container (mixin) dans le scss mixin et revoir le main.scss
+déplacer les couleur .scss dans utils ansi que les police?
 
 ctrl k c = comment
 ctrl k u = decomment

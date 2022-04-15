@@ -29,14 +29,10 @@ body a {
 }
 
 .darkmode {
-  --primary-color: rgb(255, 255, 255);
+  --primary-color: rgb(236, 236, 228);
   --secondary-color: rgb(17, 17, 17);
   --third-color: rgba(129, 129, 129, 0.925);
   --menu-color: rgba(250, 250, 250, 0.925);
-}
-
-.ringcouleur {
-  color: blue;
 }
 
 .cursor {
@@ -322,7 +318,7 @@ input:checked + label:after {
   font-size: 3rem;
   color: var(--secondary-color);
   text-align: center;
-  padding-top: 5%;
+  padding-top: 2%;
   margin: auto;
 }
 .section2__title h3 {
@@ -389,7 +385,7 @@ input:checked + label:after {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 15% 20% 25% 20%;
+  padding: 2% 20% 25% 20%;
 }
 .section3__title {
   width: 100%;
@@ -420,8 +416,71 @@ input:checked + label:after {
   font-family: "3dumbregular";
   font-size: 1.3rem;
   color: var(--secondary-color);
-  text-align: center;
+  font-size: 1.7rem;
 }
+.section3__item__img--card {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  box-sizing: border-box;
+  margin-left: 2%;
+  float: right;
+  height: 375px;
+  width: 300px;
+  border-radius: 10px;
+  transition: background 0.8s;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: url(../../public/img/photo_id.png) center center no-repeat;
+  background-size: 375px;
+  background-color: opacity 0;
+}
+.section3__item__img--card:hover {
+  background: url(../../public/img/photo_id.png) left center no-repeat;
+  background-size: 575px;
+}
+.section3__item__img--card:hover h4 {
+  opacity: 1;
+}
+.section3__item__img--card:hover ul {
+  opacity: 1;
+}
+.section3__item__img--border {
+  height: 365px;
+  width: 290px;
+  border-radius: 10px;
+  transition: 0.8s;
+  position: relative;
+}
+.section3__item__img--border:hover {
+  border: 1px solid white;
+  transition: 0.8s;
+}
+.section3__item__img--title {
+  font-family: "3dumbregular";
+  font-size: 1.3rem;
+  color: var(--secondary-color);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.8s;
+  left: 0;
+  margin: 20px;
+  position: absolute;
+}
+.section3__item__img--social {
+  position: absolute;
+  opacity: 0;
+  bottom: 0;
+  left: 0;
+  transition: 0.8s;
+}
+.section3__item__img--social li {
+  list-style: none;
+}
+
 .section4 {
   padding: 0;
   margin: 0;
